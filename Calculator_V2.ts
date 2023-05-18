@@ -1,5 +1,5 @@
-
-const calculator= (a: number, b:number, op:'add'|'divide'|'multiply'|'minus') => {
+type operation ='add'|'divide'|'multiply'|'minus'
+const calculatorV2= (a: number, b:number, op:operation) => {
 
     if (op == 'add') return a + b
     if (op == 'divide') {
@@ -10,4 +10,4 @@ const calculator= (a: number, b:number, op:'add'|'divide'|'multiply'|'minus') =>
     if (op =='minus') return a -b
 }
 
-console.log(calculator(2,4,'add'))
+console.log(calculatorV2(2,4,'add'))
